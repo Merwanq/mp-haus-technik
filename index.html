@@ -3,66 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MP Haus Technik - Startseite</title>
+  <title>MP Haus Technik</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="container header-container">
+    <div class="logo-container">
       <img src="bilder/logo.png" alt="MP Haus Technik Logo" class="logo" />
-      <nav>
-        <a href="index.html" class="nav-link active">Startseite</a>
-        <a href="leistungen.html" class="nav-link">Leistungen</a>
-        <a href="kontakt.html" class="nav-link">Kontakt</a>
-      </nav>
+      <h1>MP Haus Technik</h1>
     </div>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>MP Haus Technik</h1>
-      <p>Ihr Partner für moderne Heizungs-, Klima- und Solartechnik</p>
-      <a href="kontakt.html" class="btn-primary">Jetzt Kontakt aufnehmen</a>
-    </section>
+  <section class="hero">
+    <h2>Ihr Partner für moderne Heizungs-, Klima- und Solartechnik</h2>
+  </section>
 
-    <section class="leistungen container">
-      <h2>Unsere Leistungen</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="bilder/heizung.jpg" alt="Heizungsanlage" />
-          <h3>Heizung</h3>
-          <p>Moderne und effiziente Heizsysteme – für Wohlfühlwärme in Ihrem Zuhause.</p>
-        </article>
-        <article class="card">
-          <img src="bilder/klima.jpg" alt="Klimaanlage" />
-          <h3>Klimaanlagen</h3>
-          <p>Kühle Räume im Sommer – individuell geplant und professionell installiert.</p>
-        </article>
-        <article class="card">
-          <img src="bilder/solar.jpg" alt="Solaranlage" />
-          <h3>Solartechnik</h3>
-          <p>Nutzen Sie die Kraft der Sonne – mit modernen Photovoltaik- und Solarsystemen.</p>
-        </article>
-      </div>
-    </section>
+  <section id="leistungen" class="leistungen-section">
+    <h3>Unsere Leistungen</h3>
+    <div class="leistungen-cards">
+      <article class="card">
+        <img src="bilder/heizung.jpg" alt="Heizungsanlage" />
+        <h4>Heizung</h4>
+        <p>Moderne und effiziente Heizsysteme – für Wohlfühlwärme in Ihrem Zuhause.</p>
+      </article>
+      <article class="card">
+        <img src="bilder/klima.jpg" alt="Klimaanlage" />
+        <h4>Klimaanlagen</h4>
+        <p>Kühle Räume im Sommer – individuell geplant und professionell installiert.</p>
+      </article>
+      <article class="card">
+        <img src="bilder/solar.jpg" alt="Solaranlage" />
+        <h4>Solartechnik</h4>
+        <p>Nutzen Sie die Kraft der Sonne – mit modernen Photovoltaik- und Solarsystemen.</p>
+      </article>
+    </div>
+  </section>
 
-    <section class="kontakt-preview container">
-      <h2>Kontaktieren Sie uns</h2>
-      <form action="kontakt.html" method="get" class="kontakt-form-preview">
-        <input type="text" name="name" placeholder="Ihr Name" required />
-        <input type="email" name="email" placeholder="Ihre E-Mail" required />
-        <textarea name="message" rows="4" placeholder="Ihre Nachricht" required></textarea>
-        <button type="submit" class="btn-primary">Nachricht senden</button>
-      </form>
-      <p class="kontakt-info">
-        Oder rufen Sie uns an: <strong>0123 456789</strong><br />
-        Adresse: Musterstraße 123, 12345 Musterstadt
-      </p>
-    </section>
-  </main>
+  <section id="kontakt" class="kontakt-section">
+    <h3>Kontakt</h3>
+    <form action="mailto:deine-email@domain.de" method="post" enctype="text/plain" class="kontakt-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" required />
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="E-Mail" required />
+
+      <label for="nachricht">Nachricht</label>
+      <textarea id="nachricht" name="Nachricht" rows="5" required></textarea>
+
+      <button type="submit">Senden</button>
+    </form>
+  </section>
 
   <footer>
     <p>© 2025 MP Haus Technik – Alle Rechte vorbehalten</p>
+    <p>Adresse: Musterstraße 123, 12345 Musterstadt – Tel: 0123 456789</p>
   </footer>
 </body>
 </html>
