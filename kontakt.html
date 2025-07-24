@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontakt – MP Haus Technik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="bilder/logo.png" alt="Firmenlogo" class="logo">
-        <h1>MP Haus Technik</h1>
-        <nav>
-            <a href="index.html">Start</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
 
-    <main>
-        <h2>Kontaktieren Sie uns</h2>
-        <p>Adresse: Musterstraße 12, 12345 Musterstadt</p>
-        <p>Telefon: 0123 / 456 789</p>
-        <p>E-Mail: info@mp-haustechnik.de</p>
+<header>
+    <img src="logo.png" alt="MP Haus Technik Logo" class="logo">
+    <nav>
+        <a href="index.html#leistungen">Leistungen</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
 
-        <form>
-            <label>Name:<br><input type="text" name="name" required></label><br><br>
-            <label>E-Mail:<br><input type="email" name="email" required></label><br><br>
-            <label>Nachricht:<br><textarea name="nachricht" rows="5" required></textarea></label><br><br>
-            <button type="submit">Absenden</button>
-        </form>
-    </main>
+<section class="hero">
+    <h1>Kontaktieren Sie uns</h1>
+    <p>Wir freuen uns auf Ihre Anfrage</p>
+</section>
 
-    <footer>
-        <p>&copy; 2025 MP Haus Technik – Alle Rechte vorbehalten</p>
-    </footer>
+<section class="section" id="kontaktformular">
+    <form>
+        <input type="text" placeholder="Ihr Name" required>
+        <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+        <textarea rows="6" placeholder="Ihre Nachricht..." required></textarea>
+        <button type="submit">Absenden</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 MP Haus Technik – Alle Rechte vorbehalten</p>
+    <p>Adresse: Musterstraße 123, 12345 Musterstadt – Tel: 0123 456789</p>
+</footer>
+
 </body>
 </html>
