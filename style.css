@@ -11,17 +11,22 @@ body {
 }
 
 header {
-    background-color: #004c99;
-    padding: 30px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  text-align: center;
+  background: linear-gradient(90deg, #1976d2, #42a5f5);
+  color: white;
+  padding: 40px 20px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
 }
 
 .logo {
-    height: 120px;
-    max-width: none;
+  max-width: 150px; /* Größe des Logos */
+  height: auto;
+  display: inline-block;
 }
+
 
 nav a {
     color: white;
