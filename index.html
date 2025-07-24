@@ -4,135 +4,15 @@
     <meta charset="UTF-8">
     <title>MP Haus Technik</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            background-color: #f4f7fa;
-            color: #333;
-        }
-
-        header {
-            background-color: #004c99;
-            padding: 20px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        header img {
-            height: 60px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 30px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            padding: 80px 40px;
-            background: linear-gradient(to right, #0066cc, #3399ff);
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 20px;
-        }
-
-        .section {
-            padding: 60px 40px;
-        }
-
-        .section h2 {
-            font-size: 32px;
-            color: #004c99;
-            margin-bottom: 20px;
-        }
-
-        .leistungen {
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .leistung {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            flex: 1 1 300px;
-        }
-
-        .leistung img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            padding: 12px 20px;
-            background-color: #004c99;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #003366;
-        }
-
-        footer {
-            background-color: #004c99;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo MP Haus Technik">
+    <img src="logo.png" alt="MP Haus Technik Logo" class="logo">
     <nav>
         <a href="#leistungen">Leistungen</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
 </header>
 
@@ -160,16 +40,6 @@
             <p>Nutzen Sie die Kraft der Sonne – mit modernen Photovoltaik- und Solarsystemen.</p>
         </div>
     </div>
-</section>
-
-<section class="section" id="kontakt">
-    <h2>Kontaktieren Sie uns</h2>
-    <form>
-        <input type="text" placeholder="Ihr Name" required>
-        <input type="email" placeholder="Ihre E-Mail" required>
-        <textarea rows="5" placeholder="Ihre Nachricht..." required></textarea>
-        <button type="submit">Absenden</button>
-    </form>
 </section>
 
 <footer>
