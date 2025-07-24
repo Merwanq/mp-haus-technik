@@ -1,51 +1,90 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
     color: #333;
 }
 
 header {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
+    background-color: #004c99;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 120px;
-    height: auto;
-}
-
-nav {
-    margin-top: 1rem;
+    height: 120px;
+    max-width: none;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin-left: 30px;
     font-weight: bold;
+    font-size: 18px;
 }
 
-main {
-    padding: 2rem;
+nav a:hover {
+    text-decoration: underline;
 }
 
-main ul {
-    list-style-type: square;
+.hero {
+    padding: 80px 40px;
+    background: linear-gradient(to right, #0066cc, #3399ff);
+    color: white;
+    text-align: center;
 }
 
-.bild {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 1rem;
-    border: 2px solid #ccc;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.section {
+    padding: 60px 40px;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #004c99;
+    margin-bottom: 20px;
+}
+
+.leistungen {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.leistung {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+}
+
+.leistung img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 footer {
-    background-color: #ddd;
+    background-color: #004c99;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 20px;
+    margin-top: 60px;
 }
