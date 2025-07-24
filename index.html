@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>MP Haus Technik</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MP Haus Technik - Startseite</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header>
-  <div class="logo-container">
-    <img src="bilder/logo.png" alt="MP Haus Technik Logo" class="logo" />
-  </div>
-  <h1>MP Haus Technik</h1>
-  <p>Ihr Partner für moderne Heizungs-, Klima- und Solartechnik</p>
-</header>
-
-
-<section class="hero">
-    <h1>MP Haus Technik</h1>
-    <p>Ihr Partner für moderne Heizungs-, Klima- und Solartechnik</p>
-</section>
-
-<section class="section" id="leistungen">
-    <h2>Unsere Leistungen</h2>
-    <div class="leistungen">
-        <div class="leistung">
-            <img src="heizung.jpg" alt="Heizungsanlage">
-            <h3>Heizung</h3>
-            <p>Moderne und effiziente Heizsysteme – für Wohlfühlwärme in Ihrem Zuhause.</p>
-        </div>
-        <div class="leistung">
-            <img src="klima.jpg" alt="Klimaanlage">
-            <h3>Klimaanlagen</h3>
-            <p>Kühle Räume im Sommer – individuell geplant und professionell installiert.</p>
-        </div>
-        <div class="leistung">
-            <img src="solar.jpg" alt="Solaranlage">
-            <h3>Solartechnik</h3>
-            <p>Nutzen Sie die Kraft der Sonne – mit modernen Photovoltaik- und Solarsystemen.</p>
-        </div>
+  <header>
+    <div class="container header-container">
+      <img src="bilder/logo.png" alt="MP Haus Technik Logo" class="logo" />
+      <nav>
+        <a href="index.html" class="nav-link active">Startseite</a>
+        <a href="leistungen.html" class="nav-link">Leistungen</a>
+        <a href="kontakt.html" class="nav-link">Kontakt</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<footer>
+  <main>
+    <section class="hero">
+      <h1>MP Haus Technik</h1>
+      <p>Ihr Partner für moderne Heizungs-, Klima- und Solartechnik</p>
+      <a href="kontakt.html" class="btn-primary">Jetzt Kontakt aufnehmen</a>
+    </section>
+
+    <section class="leistungen container">
+      <h2>Unsere Leistungen</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="bilder/heizung.jpg" alt="Heizungsanlage" />
+          <h3>Heizung</h3>
+          <p>Moderne und effiziente Heizsysteme – für Wohlfühlwärme in Ihrem Zuhause.</p>
+        </article>
+        <article class="card">
+          <img src="bilder/klimaanlage.jpg" alt="Klimaanlage" />
+          <h3>Klimaanlagen</h3>
+          <p>Kühle Räume im Sommer – individuell geplant und professionell installiert.</p>
+        </article>
+        <article class="card">
+          <img src="bilder/solar.jpg" alt="Solaranlage" />
+          <h3>Solartechnik</h3>
+          <p>Nutzen Sie die Kraft der Sonne – mit modernen Photovoltaik- und Solarsystemen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="kontakt-preview container">
+      <h2>Kontaktieren Sie uns</h2>
+      <form action="kontakt.html" method="get" class="kontakt-form-preview">
+        <input type="text" name="name" placeholder="Ihr Name" required />
+        <input type="email" name="email" placeholder="Ihre E-Mail" required />
+        <textarea name="message" rows="4" placeholder="Ihre Nachricht" required></textarea>
+        <button type="submit" class="btn-primary">Nachricht senden</button>
+      </form>
+      <p class="kontakt-info">
+        Oder rufen Sie uns an: <strong>0123 456789</strong><br />
+        Adresse: Musterstraße 123, 12345 Musterstadt
+      </p>
+    </section>
+  </main>
+
+  <footer>
     <p>© 2025 MP Haus Technik – Alle Rechte vorbehalten</p>
-    <p>Adresse: Musterstraße 123, 12345 Musterstadt – Tel: 0123 456789</p>
-</footer>
-
+  </footer>
 </body>
 </html>
